@@ -21,7 +21,7 @@ Kelompok 5: Kakaw
     <td align="center"><b>GitHub</b></td>
   </tr>
   <tr align="left">
-    <td>5025251000</td>
+    <td>5025251204</td>
     <td>Althof Rahmatullah</td>
     <td align="center">
       <a href="https://github.com/Linney1">
@@ -31,7 +31,7 @@ Kelompok 5: Kakaw
     </td>
   </tr>
   <tr align="left">
-    <td>5025251000</td>
+    <td>5025251183</td>
     <td>Aditya Hariyadi Tjujitno</td>
     <td align="center">
       <a href="https://github.com/adityahariyadit-hash">
@@ -51,7 +51,7 @@ Kelompok 5: Kakaw
     </td>
   </tr>
   <tr align="left">
-    <td>5025251000</td>
+    <td>5025251206</td>
     <td>Rexa Matutu Harsaputra</td>
     <td align="center">
       <a href="https://github.com/rexaeca">
@@ -61,7 +61,7 @@ Kelompok 5: Kakaw
     </td>
   </tr>
   <tr align="left">
-    <td>5025251000</td>
+    <td>5025251211</td>
     <td>Rizqi Ardiansyah Putra P.</td>
     <td align="center">
       <a href="https://github.com/Ciko1140">
