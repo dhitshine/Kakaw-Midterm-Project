@@ -74,6 +74,27 @@ Kelompok 5: Kakaw
 
 </div>
 
+## Project Structure
+```
+.
+├── doc
+│   ├── Laporan.pdf
+│   └── Slide.pdf
+├── src
+│   └── kakaw
+│       ├── __init__.py       # Fungsi main
+│       ├── algorithms        # List algoritma
+│       ├── models            # Model utama 
+│       └── objectives        # Objective function
+├── tests
+├── pyproject.toml            # Metadata project
+├── .python-version           # Versi Python
+├── .gitignore                # Abaikan tracking file atau direktori
+├── uv.lock
+└── README.md 
+
+```
+
 ## Requirements
 - Python Versions 3.14.2 or newer
 - uv Versions 0.12 or newer (recommended package manager)
