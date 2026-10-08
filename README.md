@@ -1,5 +1,5 @@
 # Kakaw-Midterm-Project
-> Implementasi ...
+> Penjadwalan Kelas Mata Kuliah Menggunakan Pendekatan Local Search Optimization.
 
 <p align="center">
 <a href="/doc">Project Report</a>
@@ -7,7 +7,7 @@
 
 ---
 
-## Identitas Kelompok
+## Team
 Kelompok 5: Kakaw
 
 <div align="center" id="contributor">
@@ -74,6 +74,9 @@ Kelompok 5: Kakaw
 
 </div>
 
+## Description
+Kakaw adalah sistem penjadwalan kelas mata kuliah paralel dengan menggunakan pendekatan local search.
+
 ## Project Structure
 ```
 .
@@ -85,7 +88,8 @@ Kelompok 5: Kakaw
 │       ├── __init__.py       # Fungsi main
 │       ├── algorithms        # List algoritma
 │       ├── models            # Model utama 
-│       └── objectives        # Objective function
+│       ├── objectives        # Objective function
+│       └── utils             # Parser
 ├── tests
 ├── pyproject.toml            # Metadata project
 ├── .python-version           # Versi Python
@@ -99,7 +103,33 @@ Kelompok 5: Kakaw
 - Python Versions 3.14.2 or newer
 - uv Versions 0.12 or newer (recommended package manager)
 
-## How to run
+## Installation
+- Clone repositorinya
 ```sh
-uv run kakaw
+git clone https://github.com/dhitshine/Kakaw-Midterm-Project.git && cd Kakaw-Midterm-Project
+```
+- Buat virtual environtment dengan `uv`
+```sh
+uv venv
+```
+- Install dependencies
+```sh
+uv sync
+```
+## Usage
+### Steepest Ascent Hill-Climbing
+```sh
+uv run kakaw --test tests/sample.json --algorithm steepest-hc --plot output.png
+```
+### Simulated Annealing
+```sh
+uv run kakaw --test tests/sample.json --algorithm simulated --plot output.png
+```
+### Genetic Algorithm
+```sh
+uv run kakaw --test tests/sample.json --algorithm genetic --plot output.png
+```
+### Help
+```sh
+uv run kakaw --help
 ```
