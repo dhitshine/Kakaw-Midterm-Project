@@ -125,10 +125,8 @@ uv run kakaw --test tests/sample.json --algorithm steepest-hc --plot output.png
 ```
 ### Simulated Annealing
 ```sh
-uv run kakaw --test tests/sample.json --algorithm simulated --plot output.png --seed 42
+uv run kakaw --test tests/sample.json --algorithm simulated --plot output.png
 ```
-`output.png` berisi kurva `F` terhadap `evaluations` untuk run tersebut.
-
 ### Genetic Algorithm
 ```sh
 uv run kakaw --test tests/sample.json --algorithm genetic --plot output.png
