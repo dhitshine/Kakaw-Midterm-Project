@@ -3,6 +3,8 @@ from __future__ import annotations
 import math
 from random import Random
 
+import matplotlib.pyplot as plt
+
 from kakaw.algorithms.base import LocalSearch
 from kakaw.problems import Problem, State
 
@@ -56,7 +58,7 @@ class SimulatedAnnealing(LocalSearch):
         T = self.T0
 
         for _ in range(self.max_iterations):
-            neighbor = self._random_successor(current, rng)
+            neighbor = self.problem.random_successor(current, rng)
             neighbor_score = objective.evaluate(neighbor)
             delta = neighbor_score - current_score
 
@@ -92,25 +94,22 @@ class SimulatedAnnealing(LocalSearch):
         self.goal_state = best
         return self.goal_state
 
-    def _random_successor(self, state: State, rng: Random) -> State:
-        """
-        Membangkitkan satu tetangga acak dari N(x) sesuai §5.4:
-        - Swap hanya dipilih jika kedua durasi masih muat setelah pertukaran;
-          jika tidak, relocate yang dipakai.
-        - Move relocate dapat mengganti hari/waktu/ruangan, atau ruangan saja.
-        """
-        class_ids = tuple(self.problem._classes.keys())
-        if not class_ids:
-            return state
-
-        # Pilih swap dengan peluang 50% jika ada minimal 2 kelas
-        if len(class_ids) >= 2 and rng.random() < 0.5:
-            swapped = self.problem.random_swap(state, rng)
-            if swapped is not None:
-                return swapped
-
-        # Relocate (dipakai jika swap tidak dipilih atau swap tidak valid, §5.4)
-        class_id = rng.choice(class_ids)
-        if len(self.problem._rooms) > 1 and rng.random() < 0.2:
-            return self.problem.random_room_change(state, class_id, rng)
-        return self.problem.random_relocate(state, class_id, rng)
+    def plot(self, path: str | None = None) -> None:
+        iterations: list[float] = self.history_x or list(
+            range(1, len(self.history) + 1)
+        )
+        if not iterations:
+            print("No data to plot")
+            return
+        plt.figure(figsize=(10, 6))
+        plt.plot(iterations, self.history, linewidth=2, color="blue")
+        plt.xlabel("Iteration", fontsize=12)
+        plt.ylabel("Objective Function Value", fontsize=12)
+        plt.title("Simulated Annealing - Objective Function vs Iteration", fontsize=14)
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        if path is None:
+            plt.show()
+        else:
+            plt.savefig(path)
+        plt.close()
