@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from collections.abc import Mapping
 from copy import deepcopy
 
@@ -27,3 +29,8 @@ class State:
         assignments = dict(self.assignments)
         assignments.update(updates)
         return State(assignments)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, State):
+            return NotImplemented
+        return self.assignments == other.assignments
