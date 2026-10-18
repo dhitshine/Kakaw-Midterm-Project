@@ -88,7 +88,7 @@ class SimulatedAnnealing(LocalSearch):
                 best_score = current_score
 
             self.iteration += 1
-            self.history.append(best_score)
+            self.history.append(current_score)
             T = max(self.rho * T, 1e-12)
 
         self.goal_state = best

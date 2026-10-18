@@ -107,17 +107,17 @@ Kakaw adalah sistem penjadwalan kelas mata kuliah paralel dengan menggunakan pen
 
 ## Installation
 - Clone repositorinya
-```sh
-git clone https://github.com/dhitshine/Kakaw-Midterm-Project.git && cd Kakaw-Midterm-Project
-```
+  ```sh
+  git clone https://github.com/dhitshine/Kakaw-Midterm-Project.git && cd Kakaw-Midterm-Project
+  ```
 - Buat virtual environtment dengan `uv`
-```sh
-uv venv
-```
+  ```sh
+  uv venv
+  ```
 - Install dependencies
-```sh
-uv sync
-```
+  ```sh
+  uv sync
+  ```
 ## Usage
 ### Steepest Ascent Hill-Climbing
 ```sh

@@ -63,8 +63,7 @@ class GeneticAlgorithm(LocalSearch):
 
             population = new_population
             self.iteration += 1
-            best = min(population, key=self._score)
-            self.history.append(best[0])
+            self.history.append(score)
             self.history_x.append(self.iteration)
 
         best = min(population, key=self._score)
