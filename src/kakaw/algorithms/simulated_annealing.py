@@ -33,7 +33,7 @@ class SimulatedAnnealing(LocalSearch):
             raise ValueError("rho harus berada pada rentang (0, 1)")
 
         self.T0 = (
-            float(5.0 * self.problem.objective.weight)
+            float(0.25 * self.problem.objective.weight)
             if T0 is None
             else float(T0)
         )
@@ -54,7 +54,7 @@ class SimulatedAnnealing(LocalSearch):
 
         self.iteration = 0
         self.accepted_moves = 0
-        self.history = []
+        self.history = [current_score]
         T = self.T0
 
         for _ in range(self.max_iterations):
