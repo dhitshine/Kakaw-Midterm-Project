@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-import matplotlib.pyplot as plt
-
 from kakaw.problems import Problem, State
 
 
@@ -17,6 +15,7 @@ class LocalSearch(ABC):
         self.goal_state: State | None = None
         self.iteration: int = 0
         self.history: list[float] = []
+        self.history_x: list[float] = []
 
     @abstractmethod
     def search(self) -> State:
@@ -24,15 +23,4 @@ class LocalSearch(ABC):
 
     def plot(self, path: str | None = None) -> None:
         """Plot objective per move diterima; simpan ke `path` bila diberi."""
-        if not self.history:
-            print("No data to plot")
-            return
-        plt.plot(range(len(self.history)), self.history, marker="o")
-        plt.xlabel("iterasi")
-        plt.ylabel("F")
-        plt.title(type(self).__name__)
-        if path is None:
-            plt.show()
-        else:
-            plt.savefig(path)
-        plt.close()
+        

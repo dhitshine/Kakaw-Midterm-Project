@@ -4,7 +4,6 @@ from .steepest_hill_climbing import SteepestHillClimbing
 
 __all__ = [
     "GeneticAlgorithm",
-    "SimpleHillClimbing",
     "SimulatedAnnealing",
     "SteepestHillClimbing",
 ]
