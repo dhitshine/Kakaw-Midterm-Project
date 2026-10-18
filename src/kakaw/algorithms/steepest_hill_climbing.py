@@ -1,5 +1,4 @@
-
-from random import Random
+import matplotlib.pyplot as plt
 
 from kakaw.algorithms.base import LocalSearch
 from kakaw.problems import Problem, State
@@ -13,42 +12,34 @@ class SteepestHillClimbing(LocalSearch):
     """
 
     def __init__(
-        self, problem: Problem, max_iterations: int = 200,
-        neighbors_per_class: int = 5, seed: int = 42,
+        self, problem: Problem, max_iterations: int = 1000,
     ) -> None:
         super().__init__(problem)
         if type(max_iterations) is not int or max_iterations < 0:
             raise ValueError("max_iterations harus integer >= 0")
-        if type(neighbors_per_class) is not int or neighbors_per_class < 1:
-            raise ValueError("neighbors_per_class harus integer >= 1")
         self.max_iterations = max_iterations
-        self.neighbors_per_class = neighbors_per_class
-        self.seed = seed
 
     def search(self) -> State:
         objective = self.problem.objective
         objective.evaluations = 0
-        rng = Random(self.seed)
 
         current = self.initial_state.copy()
         current_score = objective.evaluate(current)
         self.iteration = 0
-        self.history = []
+        self.history = [current_score]
 
         for _ in range(self.max_iterations):
             best_neighbor = None
             best_score = current_score
 
-            for class_id in current.assignments:
-                for _ in range(self.neighbors_per_class):
-                    neighbor = self.problem.random_relocate(
-                        current.copy(), class_id, rng
-                    )
-                    score = objective.evaluate(neighbor)
+            neighbors = self.problem.get_all_successors(current)
 
-                    if score < best_score:
-                        best_neighbor = neighbor
-                        best_score = score
+            for neighbor in neighbors:
+                score = objective.evaluate(neighbor)
+
+                if score < best_score:
+                    best_neighbor = neighbor
+                    best_score = score
 
             if best_neighbor is None:
                 break
@@ -60,3 +51,22 @@ class SteepestHillClimbing(LocalSearch):
 
         self.goal_state = current
         return self.goal_state
+
+    def plot(self, path: str | None = None) -> None:
+        objectives: list[float] = self.history
+        if not objectives:
+            print("No data to plot")
+            return
+        plt.figure(figsize=(10, 6))
+        plt.plot(objectives, linewidth=2, color="blue")
+        plt.xlabel("Iteration", fontsize=12)
+        plt.ylabel("Objective Function", fontsize=12)
+        plt.title("Steepest Ascent Hill Climbing Algorithm - Objective Function vs Iteration", fontsize=14)
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        if path is None:
+            plt.show()
+        else:
+            plt.savefig(path)
+        plt.close()
+
