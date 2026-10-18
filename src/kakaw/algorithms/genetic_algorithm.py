@@ -1,5 +1,5 @@
 from random import Random
-
+import matplotlib.pyplot as plt
 from kakaw.algorithms.base import LocalSearch
 from kakaw.problems import Problem, State
 
@@ -39,6 +39,7 @@ class GeneticAlgorithm(LocalSearch):
         population = [(initial_score, initial)]
         self.iteration = 0
         self.history = []
+        self.history_x = []
 
         while len(population) < self.N:
             candidate = initial.copy()
@@ -64,6 +65,7 @@ class GeneticAlgorithm(LocalSearch):
             self.iteration += 1
             best = min(population, key=self._score)
             self.history.append(best[0])
+            self.history_x.append(self.iteration)
 
         best = min(population, key=self._score)
         self.goal_state = best[1]
@@ -94,3 +96,23 @@ class GeneticAlgorithm(LocalSearch):
             if rng.random() < self.p_m:
                 state = self.problem.random_relocate(state, class_id, rng)
         return state
+
+    def plot(self, path: str | None = None) -> None:
+        generations: list[float] = self.history_x
+        fitness: list[float] = [-value for value in self.history]
+        if not generations:
+            print("No data to plot")
+            return
+        plt.figure(figsize=(10, 6))
+        plt.plot(generations, fitness, linewidth=2, color="blue")
+        plt.xlabel("Generation", fontsize=12)
+        plt.ylabel("Fitness", fontsize=12)
+        plt.title("Genetic Algorithm - Fitness vs Generations", fontsize=14)
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        if path is None:
+            plt.show()
+        else:
+            plt.savefig(path)
+        plt.close()
+
