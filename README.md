@@ -75,30 +75,51 @@ Kelompok 5: Kakaw
 </div>
 
 ## Description
-Kakaw adalah sistem penjadwalan kelas mata kuliah paralel dengan menggunakan pendekatan local search.
+Kakaw adalah sistem penjadwalan kelas mata kuliah paralel dengan menggunakan pendekatan local search yang diimplementasikan sebagai *Midterm Project* mata kuliah Konsep Kecerdasan Artifisial (EK234201).
+
+Tiga algoritma local search yang diimplementasikan, yaitu:
+1. Steepest-Ascent Hill Climbing
+2. Simulated Annealing
+3. Genetic Algorithm
 
 ## Project Structure
 ```
 .
 ├── doc
-│   └── .gitkeep
+│   ├── Laporan.pdf                       # Laporan
+│   └── Slide.pdf                         # Slide
 ├── src
 │   └── kakaw
-│       ├── __init__.py       # CLI & main
-│       ├── algorithms        # HC, SA, GA
-│       ├── models            # Room, Student, CourseClass
-│       ├── problems          # State, ObjectiveFunction, Problem
-│       └── utils             # Parser
-├── tests
-│   └── sample.json           # instance Kecil
-├── pyproject.toml            # Metadata project
-├── .python-version           # Versi Python
-├── .gitignore                # Abaikan tracking file atau direktori
+│       ├── __init__.py                   # CLI & main
+│       ├── algorithms
+│       │   ├── __init__.py
+│       │   ├── base.py                   # Abstract class LocalSearch
+│       │   ├── genetic_algorithm.py      # Genetic Algorithm
+│       │   ├── simulated_annealing.py    # Simulated Annealing
+│       │   └── steepest_hill_climbing.py # Steepest-Ascent Hill Climbing
+│       ├── models
+│       │   ├── __init__.py
+│       │   ├── allocation.py             # Allocation (hari, mulai, ruangan)
+│       │   ├── constants.py              # Konstanta waktu & bobot prioritas
+│       │   ├── course_class.py           # CourseClass
+│       │   ├── instance.py               # Instance data tetap
+│       │   ├── room.py                   # Room
+│       │   └── student.py                # Student & Enrollment
+│       ├── problems
+│       │   ├── __init__.py
+│       │   ├── objective.py              # ObjectiveFunction
+│       │   ├── problem.py                # Problem & successor functions
+│       │   └── state.py                  # State
+│       └── utils
+│           ├── __init__.py
+│           ├── formatter.py              # PrettyTable schedule formatter
+│           └── parser.py                 # JSON Parser
+├── tests                                 $ Tests Case
+├── pyproject.toml                        # Metadata project
+├── .python-version                      
+├── .gitignore                          
 ├── uv.lock
-├── PROBLEM-DETAIL.md                # Spesifikasi formal problem
-├── PROBLEM-DESCRIPTION.md          # Penjelasan problem
-└── README.md 
-
+└── README.md
 ```
 
 ## Requirements
