@@ -91,6 +91,7 @@ Tiga algoritma local search yang diimplementasikan, yaitu:
 ├── src
 │   └── kakaw
 │       ├── __init__.py                   # CLI & main
+│       ├── __main__.py                   # Entry point python -m kakaw
 │       ├── algorithms
 │       │   ├── __init__.py
 │       │   ├── base.py                   # Abstract class LocalSearch
@@ -115,6 +116,7 @@ Tiga algoritma local search yang diimplementasikan, yaitu:
 │           ├── formatter.py              # PrettyTable schedule formatter
 │           └── parser.py                 # JSON Parser
 ├── tests                                 # Tests Case
+├── requirements.txt                     # Dependencies untuk pip
 ├── pyproject.toml                        # Metadata project
 ├── .python-version                      
 ├── .gitignore                          
@@ -124,22 +126,39 @@ Tiga algoritma local search yang diimplementasikan, yaitu:
 
 ## Requirements
 - Python Versions 3.14 or newer
-- uv Versions 0.12 or newer (recommended package manager)
+- uv Versions 0.12 or newer (direkomendasikan) atau `pip` bawaan Python
 
 ## Installation
-- Clone repositorinya
-  ```sh
-  git clone https://github.com/dhitshine/Kakaw-Midterm-Project.git && cd Kakaw-Midterm-Project
-  ```
-- Buat virtual environtment dengan `uv`
+1. Clone repositori:
+   ```sh
+   git clone https://github.com/dhitshine/Kakaw-Midterm-Project.git && cd Kakaw-Midterm-Project
+   ```
+
+### Opsi 1: Menggunakan `uv`
+- Buat *virtual environment* dan install *dependencies*:
   ```sh
   uv venv
-  ```
-- Install dependencies
-  ```sh
   uv sync
   ```
+
+### Opsi 2: Menggunakan `pip`
+- Buat dan aktifkan *virtual environment*:
+  ```sh
+  # Linux / macOS
+  python -m venv .venv
+  source .venv/bin/activate
+
+  # Windows (PowerShell)
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+  ```
+- Install module dan dependencies:
+  ```sh
+  pip install -e .
+  ```
 ## Usage
+> Gunakan awalan `python -m kakaw` jika menginstall dengan opsi 2.
+
 ### Steepest Ascent Hill-Climbing
 ```sh
 uv run kakaw --test tests/sample.json --algorithm steepest-hc --plot output.png
