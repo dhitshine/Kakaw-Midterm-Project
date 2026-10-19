@@ -12,9 +12,19 @@ from kakaw.problems.state import State
 
 
 class ObjectiveFunction:
-    """F(x) = W * H(x) + P(x), diminimalkan."""
+    """
+    Menilai kualitas jadwal dengan satu angka skalar yang semakin kecil semakin baik.
+
+    Nilai akhir terdiri dari pelanggaran keras yang diberi bobot besar
+    (bentrok waktu atau ruangan) dan penalti ringan (kekurangan kapasitas,
+    perpindahan dari jadwal awal, serta jeda yang terlalu panjang).
+    """
 
     def __init__(self, instance: Instance) -> None:
+        """
+        Args:
+            instance: Data yang berisi ruangan, kelas, dan mahasiswa.
+        """
         self.evaluations = 0
         self._rooms = {room.id: room for room in instance.rooms}
         self._classes = {
@@ -37,7 +47,16 @@ class ObjectiveFunction:
         self.weight: float = self._compute_weight()
 
     def _compute_weight(self) -> float:
-        """W = P_max + 1, batas longgar soft penalty (§6.3)."""
+        """
+        Hitung bobot pelanggaran keras.
+
+        Bobot dibuat lebih besar daripada total kemungkinan penalti ringan,
+        sehingga menghilangkan satu bentrok selalu lebih berharga daripada
+        memperbaiki semua penalti ringan sekaligus.
+
+        Returns:
+            Bobot untuk pelanggaran keras.
+        """
         min_capacity = min(room.capacity for room in self._rooms.values())
         capacity_bound = sum(
             max(0, len(student_ids) - min_capacity) * self._classes[class_id].sks
@@ -55,7 +74,19 @@ class ObjectiveFunction:
         return capacity_bound + change_bound + gap_bound + 1
 
     def hard_violations(self, state: State) -> int:
-        """H_student + H_room (§6.1); pasangan kelas sama hari yang near (§4.4)."""
+        """
+        Hitung bentrok antar kelas yang waktunya berdekatan pada hari sama.
+
+        Satu bentrok dihitung untuk setiap pasangan kelas yang memakai
+        ruangan sama, ditambah satu bentrok untuk setiap mahasiswa yang
+        mengambil kedua kelas tersebut.
+
+        Args:
+            state: Jadwal yang akan diperiksa.
+
+        Returns:
+            Jumlah pelanggaran keras. Nilai 0 berarti jadwal tidak bentrok.
+        """
         class_ids = list(self._classes)
         total = 0
         for i in range(len(class_ids)):
@@ -64,8 +95,8 @@ class ObjectiveFunction:
                 if not self._is_near(state, first, second):
                     continue
                 if (
-                    state.assignments[first].room_id
-                    == state.assignments[second].room_id
+                    state.allocations[first].room_id
+                    == state.allocations[second].room_id
                 ):
                     total += 1
                 total += len(
@@ -74,19 +105,42 @@ class ObjectiveFunction:
         return total
 
     def capacity_penalty(self, state: State) -> float:
-        """Kekurangan kursi × SKS kelas; bagian soft penalty (§6.2)."""
+        """
+        Hitung penalti kekurangan kursi.
+
+        Setiap kelas yang jumlah mahasiswanya melebihi kapasitas ruangan
+        memberi penalti sebesar kekurangan kursi dikali jumlah SKS.
+
+        Args:
+            state: Jadwal yang akan dinilai.
+
+        Returns:
+            Total penalti kapasitas.
+        """
         total = 0.0
         for class_id, course_class in self._classes.items():
-            room = self._rooms[state.assignments[class_id].room_id]
+            room = self._rooms[state.allocations[class_id].room_id]
             shortfall = len(self._class_student_ids[class_id]) - room.capacity
             total += max(0, shortfall) * course_class.sks
         return total
 
     def change_penalty(self, state: State) -> float:
+        """
+        Hitung penalti kelas yang hari atau jam mulainya berubah.
+
+        Perpindahan ruangan saja tidak dihitung. Besar penalti mengikuti
+        prioritas mahasiswa yang mengambil kelas tersebut.
+
+        Args:
+            state: Jadwal yang akan dinilai.
+
+        Returns:
+            Total penalti perpindahan.
+        """
         total = 0.0
         for class_id, course_class in self._classes.items():
-            assignment = state.assignments[class_id]
-            if (assignment.day, assignment.start) != (
+            allocation = state.allocations[class_id]
+            if (allocation.day, allocation.start) != (
                 course_class.initial.day,
                 course_class.initial.start,
             ):
@@ -94,15 +148,29 @@ class ObjectiveFunction:
         return total
 
     def gap_penalty(self, state: State) -> float:
+        """
+        Hitung penalti jeda yang terlalu panjang.
+
+        Untuk setiap mahasiswa, kelas-kelasnya pada hari yang sama diurutkan.
+        Jeda antar dua kelas yang melebihi buffer menambah penalti.
+
+        Args:
+            state: Jadwal yang akan dinilai.
+
+        Returns:
+            Total penalti jeda.
+        """
         total = 0.0
         for class_ids in self._student_class_ids.values():
             per_day: dict[str, list[tuple[int, int]]] = {}
             for class_id in class_ids:
-                assignment = state.assignments[class_id]
-                per_day.setdefault(assignment.day, []).append(
+                allocation = state.allocations[class_id]
+                if allocation.day not in per_day:
+                    per_day[allocation.day] = []
+                per_day[allocation.day].append(
                     (
-                        assignment.start,
-                        assignment.start + self._classes[class_id].duration,
+                        allocation.start,
+                        allocation.start + self._classes[class_id].duration,
                     )
                 )
             for meetings in per_day.values():
@@ -114,6 +182,15 @@ class ObjectiveFunction:
         return total
 
     def soft_penalty(self, state: State) -> float:
+        """
+        Jumlahkan semua penalti ringan.
+
+        Args:
+            state: Jadwal yang akan dinilai.
+
+        Returns:
+            Total penalti kapasitas, perpindahan, dan jeda.
+        """
         return (
             self.capacity_penalty(state)
             + self.change_penalty(state)
@@ -121,12 +198,34 @@ class ObjectiveFunction:
         )
 
     def evaluate(self, state: State) -> float:
+        """
+        Hitung nilai akhir jadwal dan tambah jumlah evaluasi.
+
+        Args:
+            state: Jadwal yang akan dinilai.
+
+        Returns:
+            Nilai jadwal, yaitu penalti ringan ditambah pelanggaran keras
+            yang dikalikan bobot.
+        """
         self.evaluations += 1
         return self.weight * self.hard_violations(state) + self.soft_penalty(state)
 
     def _is_near(self, state: State, first: str, second: str) -> bool:
-        a = state.assignments[first]
-        b = state.assignments[second]
+        """
+        Periksa apakah dua kelas pada hari yang sama waktunya terlalu dekat.
+
+        Args:
+            state: Jadwal yang berisi kedua kelas.
+            first: Kode kelas pertama.
+            second: Kode kelas kedua.
+
+        Returns:
+            True jika keduanya berada pada hari sama dan jaraknya kurang dari
+            buffer, False jika tidak.
+        """
+        a = state.allocations[first]
+        b = state.allocations[second]
         if a.day != b.day:
             return False
         end_a = a.start + self._classes[first].duration
