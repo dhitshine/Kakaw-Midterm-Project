@@ -45,7 +45,7 @@ def create_parser() -> argparse.ArgumentParser:
         "--max-iteration",
         type=int,
         default=None,
-        help="maximum iterations (default: 1000 for steepest-hc, 20000 for simulated)",
+        help="maximum iterations (default: 1000 for steepest-hc, 2000 for simulated)",
     )
 
     simulated = parser.add_argument_group("simulated annealing")
@@ -53,7 +53,7 @@ def create_parser() -> argparse.ArgumentParser:
         "--initial-temp",
         type=float,
         default=None,
-        help="initial temperature (default: 5 x objective weight)",
+        help="initial temperature (default: 0.25 * W)",
     )
     simulated.add_argument(
         "--rate",
@@ -103,7 +103,7 @@ def main() -> None:
         solver = SimulatedAnnealing(
             problem,
             max_iterations=(
-                args.max_iteration if args.max_iteration is not None else 20000
+                args.max_iteration if args.max_iteration is not None else 2000
             ),
             T0=args.initial_temp,
             rho=args.rate,
@@ -118,29 +118,19 @@ def main() -> None:
     h_violations = problem.objective.hard_violations(goal_state)
     p_penalty = problem.objective.soft_penalty(goal_state)
     f_score = problem.objective.weight * h_violations + p_penalty
-    feasible = "true" if h_violations == 0 else "false"
     iterations = solver.iteration
     evaluations = problem.objective.evaluations
 
-    print(
-        f"algorithm={args.algorithm} F={f_score} H={h_violations} P={p_penalty} "
-        f"feasible={feasible} iterations={iterations} evaluations={evaluations}"
+    print(f"algorithm={args.algorithm} F={f_score} H={h_violations} P={p_penalty} iterations={iterations} evaluations={evaluations}"
     )
 
+    print("Final Schedule:")
     # 2. Tabel jadwal akhir: waktu versus hari, sel berisi ruangan:kelas
     print(format_schedule(instance, goal_state))
 
     # Flag --verbose
     if args.verbose:
-        p_cap = problem.objective.capacity_penalty(goal_state)
-        p_change = problem.objective.change_penalty(goal_state)
-        p_gap = problem.objective.gap_penalty(goal_state)
-        verbose_str = f"P_kapasitas={p_cap} P_perubahan={p_change} P_jeda={p_gap}"
-        if args.algorithm == "simulated" and hasattr(solver, "accepted_moves"):
-            verbose_str += f" accepted_moves={solver.accepted_moves}"
-        print(verbose_str)
-        if args.algorithm == "steepest-hc":
-            print(f"riwayat_F={solver.history}")
+        pass
 
     # Flag --plot
     if args.plot:
