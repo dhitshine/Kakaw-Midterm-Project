@@ -21,7 +21,7 @@ class SimulatedAnnealing(LocalSearch):
         problem: Problem,
         T0: float | None = None,
         rho: float = 0.995,
-        max_iterations: int = 20000,
+        max_iterations: int = 2000,
         seed: int = 42,
     ) -> None:
         super().__init__(problem)
@@ -41,6 +41,7 @@ class SimulatedAnnealing(LocalSearch):
         self.max_iterations = max_iterations
         self.seed = seed
         self.accepted_moves: int = 0
+        self.acceptance_probabilities: list[float] = []
 
     def search(self) -> State:
         objective = self.problem.objective
@@ -55,6 +56,7 @@ class SimulatedAnnealing(LocalSearch):
         self.iteration = 0
         self.accepted_moves = 0
         self.history = [current_score]
+        self.acceptance_probabilities = []
         T = self.T0
 
         for _ in range(self.max_iterations):
@@ -64,6 +66,7 @@ class SimulatedAnnealing(LocalSearch):
 
             accept = False
             if delta <= 0:
+                prob = 1.0
                 accept = True
             else:
                 exponent = -delta / T
@@ -89,6 +92,7 @@ class SimulatedAnnealing(LocalSearch):
 
             self.iteration += 1
             self.history.append(current_score)
+            self.acceptance_probabilities.append(prob)
             T = max(self.rho * T, 1e-12)
 
         self.goal_state = best
@@ -101,13 +105,23 @@ class SimulatedAnnealing(LocalSearch):
         if not iterations:
             print("No data to plot")
             return
-        plt.figure(figsize=(10, 6))
-        plt.plot(iterations, self.history, linewidth=2, color="blue")
-        plt.xlabel("Iteration", fontsize=12)
-        plt.ylabel("Objective Function Value", fontsize=12)
-        plt.title("Simulated Annealing - Objective Function vs Iteration", fontsize=14)
-        plt.grid(True, alpha=0.3)
-        plt.tight_layout()
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10))
+
+        ax1.plot(iterations, self.history, linewidth=2, color="blue")
+        ax1.set_xlabel("Iteration", fontsize=12)
+        ax1.set_ylabel("Objective Function Value", fontsize=12)
+        ax1.set_title("Simulated Annealing - Objective Function vs Iteration", fontsize=14)
+        ax1.grid(True, alpha=0.3)
+
+        prob_iterations = list(range(1, len(self.acceptance_probabilities) + 1))
+        ax2.scatter(prob_iterations, self.acceptance_probabilities, s=6, color="orange", alpha=0.5)
+        ax2.set_xlabel("Iteration", fontsize=12)
+        ax2.set_ylabel("Acceptance Probability", fontsize=12)
+        ax2.set_title("Simulated Annealing - Acceptance Probability vs Iteration", fontsize=14)
+        ax2.set_ylim(-0.05, 1.05)
+        ax2.grid(True, alpha=0.3)
+
+        fig.tight_layout()
         if path is None:
             plt.show()
         else:
