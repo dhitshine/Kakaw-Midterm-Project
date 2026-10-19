@@ -1,6 +1,11 @@
 class Room:
-    """Ruangan dengan kapasitasnya."""
+    """Ruangan yang dapat dipakai untuk kelas."""
 
     def __init__(self, id: str, capacity: int):
-        self.id = id
-        self.capacity = capacity
+        """
+        Args:
+            id: Kode unik ruangan.
+            capacity: Jumlah maksimal mahasiswa yang muat di ruangan.
+        """
+        self.id = id              # kode ruangan, dipakai di Allocation
+        self.capacity = capacity  # dipakai untuk menghitung penalti kapasitas

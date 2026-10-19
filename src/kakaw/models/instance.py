@@ -4,7 +4,7 @@ from .student import Student
 
 
 class Instance:
-    """Data tetap satu instance. Urutan list mengikuti urutan di file."""
+    """Seluruh data tetap untuk satu kasus: ruangan, kelas, dan mahasiswa."""
 
     def __init__(
         self,
@@ -12,6 +12,12 @@ class Instance:
         classes: list[CourseClass],
         students: list[Student],
     ):
+        """
+        Args:
+            rooms: Daftar ruangan yang tersedia.
+            classes: Daftar kelas yang harus dijadwalkan.
+            students: Daftar mahasiswa beserta kelas yang mereka ambil.
+        """
         self.rooms = rooms
         self.classes = classes
         self.students = students
