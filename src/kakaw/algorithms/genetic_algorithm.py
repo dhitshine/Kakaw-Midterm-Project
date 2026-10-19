@@ -43,7 +43,7 @@ class GeneticAlgorithm(LocalSearch):
 
         while len(population) < self.N:
             candidate = initial.copy()
-            for class_id in candidate.assignments:
+            for class_id in candidate.allocations:
                 candidate = self.problem.random_relocate(candidate, class_id, rng)
             score = objective.evaluate(candidate)
             population.append((score, candidate))
@@ -82,16 +82,16 @@ class GeneticAlgorithm(LocalSearch):
         return winner[1]
 
     def _crossover(self, first: State, second: State, rng: Random) -> State:
-        assignments = {}
-        for class_id in first.assignments:
+        allocations = {}
+        for class_id in first.allocations:
             if rng.random() < 0.5:
-                assignments[class_id] = first.assignments[class_id]
+                allocations[class_id] = first.allocations[class_id]
             else:
-                assignments[class_id] = second.assignments[class_id]
-        return State(assignments)
+                allocations[class_id] = second.allocations[class_id]
+        return State(allocations)
 
     def _mutate(self, state: State, rng: Random) -> State:
-        for class_id in state.assignments:
+        for class_id in state.allocations:
             if rng.random() < self.p_m:
                 state = self.problem.random_relocate(state, class_id, rng)
         return state
