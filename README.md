@@ -114,7 +114,7 @@ Tiga algoritma local search yang diimplementasikan, yaitu:
 │           ├── __init__.py
 │           ├── formatter.py              # PrettyTable schedule formatter
 │           └── parser.py                 # JSON Parser
-├── tests                                 $ Tests Case
+├── tests                                 # Tests Case
 ├── pyproject.toml                        # Metadata project
 ├── .python-version                      
 ├── .gitignore                          
