@@ -7,5 +7,5 @@ class Room:
             id: Kode unik ruangan.
             capacity: Jumlah maksimal mahasiswa yang muat di ruangan.
         """
-        self.id = id              # kode ruangan, dipakai di Allocation
+        self.id = id  # kode ruangan, dipakai di Allocation
         self.capacity = capacity  # dipakai untuk menghitung penalti kapasitas

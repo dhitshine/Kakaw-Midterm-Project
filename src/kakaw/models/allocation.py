@@ -8,8 +8,8 @@ class Allocation:
             start: Menit mulai dihitung sejak pukul 00:00.
             room_id: Kode ruangan tempat kelas berlangsung.
         """
-        self.day = day          # hari pelaksanaan kelas
-        self.start = start      # menit mulai, bukan jam
+        self.day = day  # hari pelaksanaan kelas
+        self.start = start  # menit mulai, bukan jam
         self.room_id = room_id  # kode ruangan, bukan objek Room
 
     def __eq__(self, other: object) -> bool:

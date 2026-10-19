@@ -21,8 +21,8 @@ class Student:
             id: Kode unik mahasiswa.
             enrollments: Semua kelas yang diambil mahasiswa ini.
         """
-        self.id = id                      # kode unik mahasiswa
-        self.enrollments = enrollments    # daftar kelas yang diambil
+        self.id = id  # kode unik mahasiswa
+        self.enrollments = enrollments  # daftar kelas yang diambil
 
     @property
     def class_ids(self) -> tuple[str, ...]:

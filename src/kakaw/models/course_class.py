@@ -12,8 +12,8 @@ class CourseClass:
             sks: Jumlah SKS kelas.
             initial: Hari, jam mulai, dan ruangan pada jadwal awal.
         """
-        self.id = id            # kode unik, dipakai sebagai key jadwal
-        self.sks = sks          # menentukan lama kelas
+        self.id = id  # kode unik, dipakai sebagai key jadwal
+        self.sks = sks  # menentukan lama kelas
         self.initial = initial  # posisi sebelum diubah algoritma
 
     @property

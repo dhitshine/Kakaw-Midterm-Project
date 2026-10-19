@@ -1,5 +1,7 @@
 from random import Random
+
 import matplotlib.pyplot as plt
+
 from kakaw.algorithms.base import LocalSearch
 from kakaw.problems import Problem, State
 
@@ -11,8 +13,14 @@ class GeneticAlgorithm(LocalSearch):
     """
 
     def __init__(
-        self, problem: Problem, N: int = 50, G: int = 200,
-        p_c: float = 0.8, p_m: float = 0.1, elit: int = 2, seed: int = 42,
+        self,
+        problem: Problem,
+        N: int = 50,
+        G: int = 200,
+        p_c: float = 0.8,
+        p_m: float = 0.1,
+        elit: int = 2,
+        seed: int = 42,
     ) -> None:
         super().__init__(problem)
         if type(N) is not int or N < 3:
@@ -50,7 +58,7 @@ class GeneticAlgorithm(LocalSearch):
 
         for _ in range(self.G):
             population.sort(key=self._score)
-            new_population = population[:self.elit]
+            new_population = population[: self.elit]
             while len(new_population) < self.N:
                 first = self._tournament(population, rng)
                 second = self._tournament(population, rng)
@@ -114,4 +122,3 @@ class GeneticAlgorithm(LocalSearch):
         else:
             plt.savefig(path)
         plt.close()
-

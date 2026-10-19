@@ -37,7 +37,11 @@ def create_parser() -> argparse.ArgumentParser:
     )
 
     parser.add_argument(
-        "-s", "--seed", type=int, default=42, help="random seed for stochastic algorithms"
+        "-s",
+        "--seed",
+        type=int,
+        default=42,
+        help="random seed for stochastic algorithms",
     )
 
     limits = parser.add_argument_group("steepest-hc / simulated annealing")
@@ -110,7 +114,9 @@ def main() -> None:
             seed=args.seed,
         )
     else:
-        raise NotImplementedError(f"Algoritma '{args.algorithm}' belum diimplementasikan")
+        raise NotImplementedError(
+            f"Algoritma '{args.algorithm}' belum diimplementasikan"
+        )
 
     goal_state = solver.search()
 
@@ -121,7 +127,8 @@ def main() -> None:
     iterations = solver.iteration
     evaluations = problem.objective.evaluations
 
-    print(f"algorithm={args.algorithm} F={f_score} H={h_violations} P={p_penalty} iterations={iterations} evaluations={evaluations}"
+    print(
+        f"algorithm={args.algorithm} F={f_score} H={h_violations} P={p_penalty} iterations={iterations} evaluations={evaluations}"
     )
 
     print("Final Schedule:")

@@ -12,7 +12,9 @@ class SteepestHillClimbing(LocalSearch):
     """
 
     def __init__(
-        self, problem: Problem, max_iterations: int = 1000,
+        self,
+        problem: Problem,
+        max_iterations: int = 1000,
     ) -> None:
         super().__init__(problem)
         if type(max_iterations) is not int or max_iterations < 0:
@@ -61,7 +63,10 @@ class SteepestHillClimbing(LocalSearch):
         plt.plot(objectives, linewidth=2, color="blue")
         plt.xlabel("Iteration", fontsize=12)
         plt.ylabel("Objective Function", fontsize=12)
-        plt.title("Steepest Ascent Hill Climbing Algorithm - Objective Function vs Iteration", fontsize=14)
+        plt.title(
+            "Steepest Ascent Hill Climbing Algorithm - Objective Function vs Iteration",
+            fontsize=14,
+        )
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
         if path is None:
@@ -69,4 +74,3 @@ class SteepestHillClimbing(LocalSearch):
         else:
             plt.savefig(path)
         plt.close()
-

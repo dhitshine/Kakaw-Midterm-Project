@@ -7,12 +7,7 @@ MINUTES_PER_SKS: int = 50  # durasi = 50 * sks
 BUFFER_MINUTES: int = 20  # buffer keras antar pertemuan
 GAP_DIVISOR: int = 50  # pembagi penalti jeda
 
-PRIORITY_WEIGHT: dict[int, float] = {
-        1: 1.25, 
-        2: 1.00, 
-        3: 0.75, 
-        4: 0.50
-        }
+PRIORITY_WEIGHT: dict[int, float] = {1: 1.25, 2: 1.00, 3: 0.75, 4: 0.50}
 
 
 def minutes_to_hhmm(minutes: int) -> str:

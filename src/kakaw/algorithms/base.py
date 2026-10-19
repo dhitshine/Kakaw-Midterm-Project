@@ -23,4 +23,3 @@ class LocalSearch(ABC):
 
     def plot(self, path: str | None = None) -> None:
         """Plot objective per move diterima; simpan ke `path` bila diberi."""
-        

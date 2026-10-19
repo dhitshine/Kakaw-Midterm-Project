@@ -33,9 +33,7 @@ class SimulatedAnnealing(LocalSearch):
             raise ValueError("rho harus berada pada rentang (0, 1)")
 
         self.T0 = (
-            float(0.25 * self.problem.objective.weight)
-            if T0 is None
-            else float(T0)
+            float(0.25 * self.problem.objective.weight) if T0 is None else float(T0)
         )
         self.rho = float(rho)
         self.max_iterations = max_iterations
@@ -110,14 +108,24 @@ class SimulatedAnnealing(LocalSearch):
         ax1.plot(iterations, self.history, linewidth=2, color="blue")
         ax1.set_xlabel("Iteration", fontsize=12)
         ax1.set_ylabel("Objective Function Value", fontsize=12)
-        ax1.set_title("Simulated Annealing - Objective Function vs Iteration", fontsize=14)
+        ax1.set_title(
+            "Simulated Annealing - Objective Function vs Iteration", fontsize=14
+        )
         ax1.grid(True, alpha=0.3)
 
         prob_iterations = list(range(1, len(self.acceptance_probabilities) + 1))
-        ax2.scatter(prob_iterations, self.acceptance_probabilities, s=6, color="orange", alpha=0.5)
+        ax2.scatter(
+            prob_iterations,
+            self.acceptance_probabilities,
+            s=6,
+            color="orange",
+            alpha=0.5,
+        )
         ax2.set_xlabel("Iteration", fontsize=12)
         ax2.set_ylabel("Acceptance Probability", fontsize=12)
-        ax2.set_title("Simulated Annealing - Acceptance Probability vs Iteration", fontsize=14)
+        ax2.set_title(
+            "Simulated Annealing - Acceptance Probability vs Iteration", fontsize=14
+        )
         ax2.set_ylim(-0.05, 1.05)
         ax2.grid(True, alpha=0.3)
 

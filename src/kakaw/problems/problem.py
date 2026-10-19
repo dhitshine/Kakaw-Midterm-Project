@@ -13,7 +13,6 @@ from kakaw.problems.state import State
 
 
 class Problem:
-
     def __init__(self, instance: Instance) -> None:
         """
         Args:
