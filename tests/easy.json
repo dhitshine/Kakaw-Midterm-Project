@@ -2,38 +2,20 @@
   "ruangan": [
     {
       "kode": "R1",
-      "kapasitas": 25
+      "kapasitas": 30
     },
     {
       "kode": "R2",
-      "kapasitas": 20
+      "kapasitas": 25
     },
     {
       "kode": "R3",
-      "kapasitas": 15
+      "kapasitas": 10
     }
   ],
   "kelas": [
     {
       "kode": "IF101_A",
-      "sks": 3,
-      "jadwal_awal": {
-        "hari": "Senin",
-        "mulai": "07:00",
-        "kode_ruangan": "R3"
-      }
-    },
-    {
-      "kode": "IF101_B",
-      "sks": 3,
-      "jadwal_awal": {
-        "hari": "Senin",
-        "mulai": "07:00",
-        "kode_ruangan": "R2"
-      }
-    },
-    {
-      "kode": "IF102_A",
       "sks": 2,
       "jadwal_awal": {
         "hari": "Senin",
@@ -42,542 +24,582 @@
       }
     },
     {
-      "kode": "IF102_B",
+      "kode": "IF101_B",
       "sks": 2,
       "jadwal_awal": {
-        "hari": "Selasa",
+        "hari": "Senin",
         "mulai": "07:00",
-        "kode_ruangan": "R3"
+        "kode_ruangan": "R1"
       }
     },
     {
-      "kode": "MA101_A",
+      "kode": "MA102_A",
       "sks": 3,
       "jadwal_awal": {
-        "hari": "Selasa",
+        "hari": "Senin",
+        "mulai": "07:00",
+        "kode_ruangan": "R2"
+      }
+    },
+    {
+      "kode": "MA102_B",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Senin",
+        "mulai": "07:00",
+        "kode_ruangan": "R2"
+      }
+    },
+    {
+      "kode": "CS201_A",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Senin",
         "mulai": "07:00",
         "kode_ruangan": "R3"
       }
     },
     {
-      "kode": "MA101_B",
-      "sks": 2,
+      "kode": "CS201_B",
+      "sks": 3,
       "jadwal_awal": {
-        "hari": "Rabu",
+        "hari": "Senin",
         "mulai": "07:00",
-        "kode_ruangan": "R2"
+        "kode_ruangan": "R3"
       }
     }
   ],
   "mahasiswa": [
     {
-      "nrp": "S01_01",
+      "nrp": "E1_01",
       "kelas": [
         "IF101_A",
-        "IF102_A",
-        "MA101_A"
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
         1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_02",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_03",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_04",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_05",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_06",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_07",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_08",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_09",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_10",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_11",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S01_12",
-      "kelas": [
-        "IF101_A",
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "nrp": "S02_01",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_02",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_03",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_04",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_05",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_06",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_07",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_08",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_09",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S02_10",
-      "kelas": [
-        "IF101_A",
-        "IF102_B"
-      ],
-      "prioritas": [
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_01",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_02",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_03",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_04",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_05",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_06",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_07",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_08",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_09",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_10",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_11",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S03_12",
-      "kelas": [
-        "IF101_B",
-        "IF102_B",
-        "MA101_B"
-      ],
-      "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S04_01",
-      "kelas": [
-        "IF102_A",
-        "MA101_A"
-      ],
-      "prioritas": [
         2,
         2
       ]
     },
     {
-      "nrp": "S04_02",
+      "nrp": "E1_02",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_03",
+      "nrp": "E1_03",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_04",
+      "nrp": "E1_04",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_05",
+      "nrp": "E1_05",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_06",
+      "nrp": "E1_06",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_07",
+      "nrp": "E1_07",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
       ],
       "prioritas": [
+        1,
         2,
         2
       ]
     },
     {
-      "nrp": "S04_08",
+      "nrp": "E1_08",
       "kelas": [
-        "IF102_A",
-        "MA101_A"
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E1_09",
+      "kelas": [
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E1_10",
+      "kelas": [
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E1_11",
+      "kelas": [
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E1_12",
+      "kelas": [
+        "IF101_A",
+        "MA102_A",
+        "CS201_A"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_01",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_02",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_03",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_04",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_05",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_06",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_07",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_08",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_09",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_10",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_11",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E2_12",
+      "kelas": [
+        "IF101_B",
+        "MA102_B",
+        "CS201_B"
+      ],
+      "prioritas": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "nrp": "E3_01",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
       ],
       "prioritas": [
         2,
-        2
+        3
+      ]
+    },
+    {
+      "nrp": "E3_02",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_03",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_04",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_05",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_06",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_07",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_08",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_09",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E3_10",
+      "kelas": [
+        "IF101_A",
+        "MA102_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_01",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_02",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_03",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_04",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_05",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_06",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_07",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_08",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_09",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "E4_10",
+      "kelas": [
+        "IF101_B",
+        "MA102_A"
+      ],
+      "prioritas": [
+        2,
+        3
       ]
     }
   ]

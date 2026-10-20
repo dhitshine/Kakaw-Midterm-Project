@@ -20,50 +20,14 @@
       "jadwal_awal": {
         "hari": "Senin",
         "mulai": "07:00",
-        "kode_ruangan": "R3"
-      }
-    },
-    {
-      "kode": "IF301_B",
-      "sks": 3,
-      "jadwal_awal": {
-        "hari": "Senin",
-        "mulai": "07:00",
-        "kode_ruangan": "R2"
-      }
-    },
-    {
-      "kode": "IF302_A",
-      "sks": 3,
-      "jadwal_awal": {
-        "hari": "Senin",
-        "mulai": "07:00",
         "kode_ruangan": "R1"
       }
     },
     {
-      "kode": "IF302_B",
-      "sks": 3,
-      "jadwal_awal": {
-        "hari": "Selasa",
-        "mulai": "07:00",
-        "kode_ruangan": "R3"
-      }
-    },
-    {
-      "kode": "IF303_A",
+      "kode": "IF301_B",
       "sks": 2,
       "jadwal_awal": {
-        "hari": "Selasa",
-        "mulai": "07:00",
-        "kode_ruangan": "R2"
-      }
-    },
-    {
-      "kode": "IF303_B",
-      "sks": 2,
-      "jadwal_awal": {
-        "hari": "Selasa",
+        "hari": "Senin",
         "mulai": "07:00",
         "kode_ruangan": "R1"
       }
@@ -72,16 +36,16 @@
       "kode": "MA301_A",
       "sks": 3,
       "jadwal_awal": {
-        "hari": "Rabu",
+        "hari": "Senin",
         "mulai": "07:00",
-        "kode_ruangan": "R3"
+        "kode_ruangan": "R2"
       }
     },
     {
       "kode": "MA301_B",
-      "sks": 3,
+      "sks": 2,
       "jadwal_awal": {
-        "hari": "Rabu",
+        "hari": "Senin",
         "mulai": "07:00",
         "kode_ruangan": "R2"
       }
@@ -90,1130 +54,2475 @@
       "kode": "CS301_A",
       "sks": 2,
       "jadwal_awal": {
-        "hari": "Kamis",
+        "hari": "Senin",
         "mulai": "07:00",
         "kode_ruangan": "R3"
       }
     },
     {
-      "kode": "CS301_B",
+      "kode": "IF302_A",
+      "sks": 3,
+      "jadwal_awal": {
+        "hari": "Selasa",
+        "mulai": "07:00",
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "IF302_B",
       "sks": 2,
       "jadwal_awal": {
-        "hari": "Kamis",
+        "hari": "Selasa",
+        "mulai": "07:00",
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "MA302_A",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Selasa",
         "mulai": "07:00",
         "kode_ruangan": "R2"
       }
     },
     {
-      "kode": "AI301_A",
+      "kode": "MA302_B",
       "sks": 3,
       "jadwal_awal": {
-        "hari": "Jumat",
+        "hari": "Selasa",
         "mulai": "07:00",
-        "kode_ruangan": "R3"
+        "kode_ruangan": "R2"
       }
     },
     {
-      "kode": "AI301_B",
+      "kode": "IF303_A",
       "sks": 2,
       "jadwal_awal": {
-        "hari": "Jumat",
+        "hari": "Rabu",
         "mulai": "07:00",
-        "kode_ruangan": "R3"
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "IF303_B",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Rabu",
+        "mulai": "09:00",
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "BL301_A",
+      "sks": 3,
+      "jadwal_awal": {
+        "hari": "Rabu",
+        "mulai": "11:00",
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "IF304_A",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Rabu",
+        "mulai": "14:20",
+        "kode_ruangan": "R1"
+      }
+    },
+    {
+      "kode": "IF304_B",
+      "sks": 2,
+      "jadwal_awal": {
+        "hari": "Rabu",
+        "mulai": "16:20",
+        "kode_ruangan": "R1"
       }
     }
   ],
   "mahasiswa": [
     {
-      "nrp": "S01_01",
+      "nrp": "H1_01",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_02",
+      "nrp": "H1_02",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_03",
+      "nrp": "H1_03",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_04",
+      "nrp": "H1_04",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_05",
+      "nrp": "H1_05",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_06",
+      "nrp": "H1_06",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_07",
+      "nrp": "H1_07",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_08",
+      "nrp": "H1_08",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_09",
+      "nrp": "H1_09",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_10",
+      "nrp": "H1_10",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_11",
+      "nrp": "H1_11",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_12",
+      "nrp": "H1_12",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_13",
+      "nrp": "H1_13",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_14",
+      "nrp": "H1_14",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_15",
+      "nrp": "H1_15",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_16",
+      "nrp": "H1_16",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_17",
+      "nrp": "H1_17",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_18",
+      "nrp": "H1_18",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_19",
+      "nrp": "H1_19",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S01_20",
+      "nrp": "H1_20",
       "kelas": [
         "IF301_A",
-        "IF302_A",
         "MA301_A"
       ],
       "prioritas": [
-        1,
         1,
         2
       ]
     },
     {
-      "nrp": "S02_01",
+      "nrp": "H1_21",
       "kelas": [
         "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "MA301_A"
       ],
       "prioritas": [
         1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_22",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_23",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_24",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_25",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_26",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_27",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_28",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_29",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_30",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_31",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_32",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_33",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_34",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H1_35",
+      "kelas": [
+        "IF301_A",
+        "MA301_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H2_01",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
         2,
         3
       ]
     },
     {
-      "nrp": "S02_02",
+      "nrp": "H2_02",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_03",
+      "nrp": "H2_03",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_04",
+      "nrp": "H2_04",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_05",
+      "nrp": "H2_05",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_06",
+      "nrp": "H2_06",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_07",
+      "nrp": "H2_07",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_08",
+      "nrp": "H2_08",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_09",
+      "nrp": "H2_09",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_10",
+      "nrp": "H2_10",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_11",
+      "nrp": "H2_11",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S02_12",
+      "nrp": "H2_12",
       "kelas": [
-        "IF301_A",
-        "IF303_A",
-        "CS301_A"
+        "IF301_B",
+        "MA301_B"
       ],
       "prioritas": [
-        1,
         2,
         3
       ]
     },
     {
-      "nrp": "S03_01",
+      "nrp": "H2_13",
       "kelas": [
         "IF301_B",
-        "IF302_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_14",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_15",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_16",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_17",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_18",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_19",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_20",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_21",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_22",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_23",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_24",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_25",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H2_26",
+      "kelas": [
+        "IF301_B",
+        "MA301_B"
+      ],
+      "prioritas": [
+        2,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_01",
+      "kelas": [
+        "IF301_A",
         "MA301_B"
       ],
       "prioritas": [
         1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_02",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_03",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_04",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_05",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_06",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_07",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_08",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_09",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_10",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_11",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_12",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_13",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_14",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_15",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_16",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H3_17",
+      "kelas": [
+        "IF301_A",
+        "MA301_B"
+      ],
+      "prioritas": [
+        1,
+        3
+      ]
+    },
+    {
+      "nrp": "H4_01",
+      "kelas": [
+        "IF301_B",
+        "CS301_A"
+      ],
+      "prioritas": [
         2,
         1
       ]
     },
     {
-      "nrp": "S03_02",
+      "nrp": "H4_02",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_03",
+      "nrp": "H4_03",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_04",
+      "nrp": "H4_04",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_05",
+      "nrp": "H4_05",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_06",
+      "nrp": "H4_06",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_07",
+      "nrp": "H4_07",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_08",
+      "nrp": "H4_08",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_09",
+      "nrp": "H4_09",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_10",
+      "nrp": "H4_10",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_11",
+      "nrp": "H4_11",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_12",
+      "nrp": "H4_12",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_13",
+      "nrp": "H4_13",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_14",
+      "nrp": "H4_14",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_15",
+      "nrp": "H4_15",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_16",
+      "nrp": "H4_16",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_17",
+      "nrp": "H4_17",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S03_18",
+      "nrp": "H4_18",
       "kelas": [
         "IF301_B",
-        "IF302_B",
-        "MA301_B"
+        "CS301_A"
       ],
       "prioritas": [
-        1,
         2,
         1
       ]
     },
     {
-      "nrp": "S04_01",
+      "nrp": "H4_19",
       "kelas": [
         "IF301_B",
+        "CS301_A"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H4_20",
+      "kelas": [
+        "IF301_B",
+        "CS301_A"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H4_21",
+      "kelas": [
+        "IF301_B",
+        "CS301_A"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H5_01",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_02",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_03",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_04",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_05",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_06",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_07",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_08",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_09",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_10",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_11",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_12",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_13",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_14",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_15",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_16",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_17",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_18",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_19",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_20",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_21",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_22",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_23",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_24",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_25",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_26",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_27",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_28",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_29",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_30",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_31",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H5_32",
+      "kelas": [
+        "IF302_A",
+        "MA302_A"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H6_01",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_02",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_03",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_04",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_05",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_06",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_07",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_08",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_09",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_10",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_11",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_12",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_13",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_14",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_15",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_16",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_17",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_18",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_19",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_20",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_21",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_22",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_23",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H6_24",
+      "kelas": [
+        "IF302_B",
+        "MA302_B"
+      ],
+      "prioritas": [
+        2,
+        1
+      ]
+    },
+    {
+      "nrp": "H7_01",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_02",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_03",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_04",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_05",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_06",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_07",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_08",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_09",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_10",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_11",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_12",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_13",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_14",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_15",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_16",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_17",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "H7_18",
+      "kelas": [
+        "IF302_A",
+        "MA302_B"
+      ],
+      "prioritas": [
+        1,
+        2
+      ]
+    },
+    {
+      "nrp": "HB_01",
+      "kelas": [
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_02",
+      "nrp": "HB_02",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_03",
+      "nrp": "HB_03",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_04",
+      "nrp": "HB_04",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_05",
+      "nrp": "HB_05",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_06",
+      "nrp": "HB_06",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_07",
+      "nrp": "HB_07",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_08",
+      "nrp": "HB_08",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_09",
+      "nrp": "HB_09",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
+        3,
+        3,
+        4,
+        4
       ]
     },
     {
-      "nrp": "S04_10",
+      "nrp": "HB_10",
       "kelas": [
-        "IF301_B",
+        "IF303_A",
         "IF303_B",
-        "CS301_B"
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
-        2,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_01",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_02",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_03",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_04",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_05",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_06",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_07",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_08",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_09",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_10",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_11",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S05_12",
-      "kelas": [
-        "IF302_A",
-        "AI301_A",
-        "CS301_A"
-      ],
-      "prioritas": [
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "nrp": "S06_01",
-      "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
-      ],
-      "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_02",
+      "nrp": "HB_11",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_03",
+      "nrp": "HB_12",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_04",
+      "nrp": "HB_13",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_05",
+      "nrp": "HB_14",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_06",
+      "nrp": "HB_15",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_07",
+      "nrp": "HB_16",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_08",
+      "nrp": "HB_17",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_09",
+      "nrp": "HB_18",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_10",
+      "nrp": "HB_19",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_11",
+      "nrp": "HB_20",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "IF303_A",
+        "IF303_B",
+        "IF304_A",
+        "IF304_B"
       ],
       "prioritas": [
-        2,
         3,
+        3,
+        4,
         4
       ]
     },
     {
-      "nrp": "S06_12",
+      "nrp": "HX_01",
       "kelas": [
-        "IF302_B",
-        "AI301_B",
-        "CS301_B"
+        "BL301_A"
       ],
       "prioritas": [
-        2,
-        3,
-        4
+        1
+      ]
+    },
+    {
+      "nrp": "HX_02",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_03",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_04",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_05",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_06",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_07",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_08",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_09",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_10",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_11",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_12",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_13",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_14",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_15",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_16",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_17",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_18",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_19",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
+      ]
+    },
+    {
+      "nrp": "HX_20",
+      "kelas": [
+        "BL301_A"
+      ],
+      "prioritas": [
+        1
       ]
     }
   ]
