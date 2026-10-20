@@ -2,13 +2,13 @@
 > Penjadwalan Kelas Mata Kuliah Menggunakan Pendekatan Local Search Optimization.
 
 <p align="center">
-<a href="/doc">Project Report</a>
+<a href="./doc/LaporanFinal.pdf">Project Report</a>
 </p>
 
 ---
 
 ## Team
-Kelompok 5: Kakaw
+Kelompok 6: Kakaw
 
 <div align="center" id="contributor">
 
