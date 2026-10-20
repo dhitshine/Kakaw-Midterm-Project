@@ -59,6 +59,7 @@ class GeneticAlgorithm(LocalSearch):
         for _ in range(self.G):
             population.sort(key=self._score)
             new_population = population[: self.elit]
+            score = population[0][0] # Best score
             while len(new_population) < self.N:
                 first = self._tournament(population, rng)
                 second = self._tournament(population, rng)

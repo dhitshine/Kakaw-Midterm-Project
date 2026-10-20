@@ -13,7 +13,6 @@ class SimulatedAnnealing(LocalSearch):
     """
     Deskripsi:
       Kelas utama untuk algoritma Simulated Annealing
-      sesuai spesifikasi §7.2 dan §5.4.
     """
 
     def __init__(
