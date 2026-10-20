@@ -131,6 +131,11 @@ def main() -> None:
         f"algorithm={args.algorithm} F={f_score} H={h_violations} P={p_penalty} iterations={iterations} evaluations={evaluations}"
     )
 
+    initial_state = problem.initial_state()
+    print("Initial Schedule:")
+    print(format_schedule(instance, initial_state))
+    print()
+
     print("Final Schedule:")
     # 2. Tabel jadwal akhir: waktu versus hari, sel berisi ruangan:kelas
     print(format_schedule(instance, goal_state))
